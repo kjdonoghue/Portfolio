@@ -1774,9 +1774,9 @@ input, select, textarea {
 		font-size: 0.9em;
 	}
 
-	header.major {
+	/* header.major {
 		margin: 0 0 3.5em 0;
-	}
+	} */
 
 		header.major h2, header.major h3, header.major h4, header.major h5, header.major h6 {
 			border-bottom: solid 2px #fff;
@@ -1798,9 +1798,9 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 
-			header.major {
+			/* header.major {
 				margin: 0 0 2em 0;
-			}
+			} */
 
 		}
 
@@ -2068,7 +2068,7 @@ input, select, textarea {
 				display: inline-block;
 				font-size: 1.5em;
 			}
-
+		
 			@media screen and (max-width: 736px) {
 
 				.icon.major {
@@ -2326,7 +2326,7 @@ input, select, textarea {
 				padding-top: 1.5em;
 				display: flex;
 				flex-direction: column;
-				justify-content: center;
+				justify-content: center;		
 			}
 
 				@media screen and (max-width: 736px) {
@@ -2335,9 +2335,16 @@ input, select, textarea {
 						padding: 0 1em !important;
 						display: flex;
 						flex-direction: column;
+						
 					}
 
 				}
+				@media screen and (max-width: 480px) {
+				ul.icons.major li {	
+					margin-bottom: 20px;
+				}
+			}
+
 
 /* Table */
 
@@ -2669,6 +2676,15 @@ input, select, textarea {
 			}
 
 /* Spotlight */
+	.projectHeader {
+		display: flex;
+		justify-content: center;
+	}
+
+	.projectHeader h2 {
+		margin-top: 20px;
+
+	}
 
 	.spotlight {
 		-moz-align-items: center;
@@ -3768,6 +3784,7 @@ input, select, textarea {
 		display: -ms-flex;
 		display: flex;
 		max-width: 45em;
+		justify-content: center;
 	}
 
 		#cta .inner header {
@@ -3775,12 +3792,15 @@ input, select, textarea {
 			-webkit-order: 1;
 			-ms-order: 1;
 			order: 1;
-			padding-right: 3em;
-			width: 70%;
+			width: 65%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;			
 		}
 
 			#cta .inner header p {
 				color: inherit;
+				text-align: center;
 			}
 
 		#cta .inner .actions {
@@ -3994,7 +4014,7 @@ input, select, textarea {
 	}
 
 	body.is-mobile.landing #banner,
-	body.is-mobile.landing .wrapper.style4 {
+	body.is-mobile.landing  {
 		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
@@ -4003,7 +4023,70 @@ input, select, textarea {
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
+ 
+.wrapper.style4 {
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/work-together.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/work-together.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/work-together.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/work-together.jpg");
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+.aboutContainer {
+	background-color: #a9b7c0;
+}
+
+.about {
+	display: flex;
+	width: 100%;
+	
+
+}
+
+.aboutImage {
+	width: 50%;
+}
+
+.image {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+
+.image img {
+	width: 50%;
+}
+
+.aboutIcons a {
+	margin: 10px;
+
+}
+.aboutCopy {
+	width: 50%;
+	text-align: left;
+}
+
+@media screen and (max-width: 480px) {
+	.about {
+		flex-direction: column;
+	}
+
+	.aboutImage {
+		width: 95%;
+	}
+
+	.aboutImage img {
+		width: 100%;
+	}
+
+	.aboutCopy {
+		width: 95%;
+		margin-top: 25px;
+	}
+}
