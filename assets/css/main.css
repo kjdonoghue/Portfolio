@@ -2679,6 +2679,7 @@ input, select, textarea {
 	.projectHeader {
 		display: flex;
 		justify-content: center;
+		background-color: rgba(0, 0, 0, 0.15);
 	}
 
 	.projectHeader h2 {
@@ -3007,7 +3008,7 @@ input, select, textarea {
 
 		.wrapper.style3 {
 			background-color: #505393;
-			color: #d3d4e4;
+			/* color: #d3d4e4; */
 		}
 
 			.wrapper.style3 strong, .wrapper.style3 b {
@@ -3792,7 +3793,7 @@ input, select, textarea {
 			-webkit-order: 1;
 			-ms-order: 1;
 			order: 1;
-			width: 65%;
+			width: 75%;
 			display: flex;
 			flex-direction: column;
 			align-items: center;			
