@@ -4091,3 +4091,11 @@ input, select, textarea {
 		margin-top: 25px;
 	}
 }
+
+.featuredWriting {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 10px;
+	text-align: center;
+}
